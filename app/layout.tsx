@@ -1,8 +1,8 @@
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, slot }) {
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>{slot}{children}</body>
     </html>
   );
 }
